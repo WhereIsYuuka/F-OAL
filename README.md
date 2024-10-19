@@ -25,6 +25,6 @@ python general_main.py --data cifar100 --cl_type nc --agent ICARL --retrieve ran
 python general_main.py --data cifar100 --cl_type nc --agent ER --update ASER --retrieve ASER --mem_size 5000 --aser_type asvm --n_smp_cls 1.5 --k 3 --learning_rate 0.001
 python general_main.py --data cifar100 --cl_type nc --agent SCR --retrieve random --update random --mem_size 5000 --head mlp --temp 0.07 --eps_mem_batch 10 --learning_rate 0.001
 python general_main.py --data  cifar100 --cl_type nc --agent PCR  --retrieve random --update random --mem_size 5000 --learning_rate 0.001
-python general_main.py--data  cifar100 --cl_type nc --agent ER_DVC  --retrieve MGI --update random --mem_size 5000 --dl_weight 4.0 --learning_rate 0.001
+python general_main.py --data  cifar100 --cl_type nc --agent ER_DVC  --retrieve MGI --update random --mem_size 5000 --dl_weight 4.0 --learning_rate 0.001
 ```
 
