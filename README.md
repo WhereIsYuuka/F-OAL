@@ -15,7 +15,8 @@ Online Class Incremental Learning (OCIL) aims to train models incrementally, whe
 Analytic Continual Learning (ACL) is a new branch for Continual Learning (CL). ACL redefines CL problem into a recursive least square form, which is solved in one epoch with high accuracy. F-OAL expand ACL to OCIL setting. Other ACL papers and codes can be found at (https://github.com/ZHUANGHP/Analytic-continual-learning)
 
 ## Reproduce the results in the paper
-Using following command can reproduce some of results:
+Our code is built on [Survey](https://github.com/RaptorMai/online-continual-learning). Using following command can reproduce some of results. The reproduction of `SLCA`, `LAE` and `EASE` can be found at [PILOT](https://github.com/sun-hailong/LAMDA-PILOT). To reproduce results on `CORe`, please check [Survey](https://github.com/RaptorMai/online-continual-learning) about placing the related files.
+
 ```
 python general_main.py --data cifar100 --cl_type nc --agent FOAL
 python general_main.py --data cifar100 --cl_type nc --agent LWF --learning_rate 0.001
@@ -24,7 +25,7 @@ python general_main.py --data cifar100 --cl_type nc --agent ER --retrieve random
 python general_main.py --data cifar100 --cl_type nc --agent ICARL --retrieve random --update random --mem_size 5000 --learning_rate 0.001
 python general_main.py --data cifar100 --cl_type nc --agent ER --update ASER --retrieve ASER --mem_size 5000 --aser_type asvm --n_smp_cls 1.5 --k 3 --learning_rate 0.001
 python general_main.py --data cifar100 --cl_type nc --agent SCR --retrieve random --update random --mem_size 5000 --head mlp --temp 0.07 --eps_mem_batch 10 --learning_rate 0.001
-python general_main.py --data  cifar100 --cl_type nc --agent PCR  --retrieve random --update random --mem_size 5000 --learning_rate 0.001
-python general_main.py --data  cifar100 --cl_type nc --agent ER_DVC  --retrieve MGI --update random --mem_size 5000 --dl_weight 4.0 --learning_rate 0.001
+python general_main.py --data cifar100 --cl_type nc --agent PCR  --retrieve random --update random --mem_size 5000 --learning_rate 0.001
+python general_main.py --data cifar100 --cl_type nc --agent ER_DVC  --retrieve MGI --update random --mem_size 5000 --dl_weight 4.0 --learning_rate 0.001
 ```
 
